@@ -1,0 +1,95 @@
+:root{
+    --azul: #5745a5;
+    --branco: rgb(255, 255, 255);
+    --preto: rgb(32, 30, 30);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+header .logo{
+    color: var(--azul);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+}
+
+header nav a:hover{
+    color:#FFFF
+}
+.letras{
+    font-size: 125%;
+    margin-right: 50px;
+}
+
+.titulo{
+    color: var(--branco);
+}
+.anime-principal{
+ font-size: 16px;
+ background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.70)100%),  url(imagem/tokyo_manji_revengers.jpg);
+ width: 100%;
+ height: 720px;
+ display: flex;
+ background-size: cover;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-start;
+
+ 
+}
+.anime-principal .descricao{
+    margin-bottom: 20px;
+    color: var(--branco);
+}
+.anime-principal .titulo{
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    color: var(--branco);
+}
+.botao{
+    background-color: rgba(0,0,0,.80);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+.botao:hover{
+    background-color: white;
+color: black;
+}
+.botao i{
+    margin-right: 10px;
+}
+
+.box-anime{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
